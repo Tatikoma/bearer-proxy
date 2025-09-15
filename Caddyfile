@@ -1,0 +1,7 @@
+{$LISTEN_HOST} {
+	reverse_proxy {
+		dynamic a app 8080 {
+			refresh 5s
+		}
+	}
+}
